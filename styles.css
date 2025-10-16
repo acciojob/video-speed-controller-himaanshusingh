@@ -1,2 +1,94 @@
-
 /* Your CSS Code here. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.player {
+  max-width: 800px;
+  width: 100%;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.player__video {
+  width: 100%;
+  display: block;
+}
+
+.player__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.progress {
+  flex: 1 0 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress__filled {
+  width: 0%;
+  height: 100%;
+  background: #ffc600;
+  border-radius: 5px;
+  transition: width 0.1s;
+}
+
+.player__button {
+  background: none;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0 5px;
+  outline: none;
+}
+
+.player__button:hover {
+  color: #ffc600;
+}
+
+.player__slider {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.skip-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.player__slider-label {
+  color: white;
+  font-size: 12px;
+  margin: 0 5px;
+}
+
+.controls-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
